@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     margin: 0;
     padding: 0;
@@ -262,3 +263,9 @@ button:hover {
     }
 
 }
+=======
+.card{
+    border:5px solid red !important;
+    display:flex !important;
+}
+>>>>>>> a703de986a130763de02e966077a2804b0dc6f54
