@@ -241,3 +241,19 @@ button:hover {
     }
 
 }
+.author-signature {
+    margin-top: 28px;
+    margin-bottom: 0;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 11px;
+
+    font-style: italic;
+
+    letter-spacing: 0.5px;
+
+    color: #9A9389;
+
+    text-align: center;
+}
