@@ -41,47 +41,26 @@ body {
 
 
 .logo {
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-
-    background: #E9E2D8;
+    width: 110px;
+    height: 110px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 
     position: relative;
-
-    font-family: "Cormorant Garamond", Georgia, serif;
-
-    font-size: 22px;
-
-    font-weight: 600;
-
-    letter-spacing: 1px;
-
-    color: #1F1F1F;
 }
 
+.logo img {
+    width: 100%;
+    height: 100%;
 
-.logo::after {
-    content: "";
+    object-fit: contain;
 
-    width: 45px;
-    height: 1px;
-
-    background: #B89B5E;
-
-    position: absolute;
-
-    bottom: -25px;
+    display: block;
 }
-
-
 h1 {
     font-family: "Cormorant Garamond", Georgia, serif;
 
