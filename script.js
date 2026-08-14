@@ -249,11 +249,11 @@ const salmos = [
         referencia: "Salmo 118:5-6"
     },
 
-     {
+    {
         titulo: "Salmo 126",
         texto: "Lo que hoy siembras con lágrimas puede convertirse mañana en una cosecha de alegría.",
         referencia: "Salmo 126:5"
-    },
+    }
 
 ];
 
