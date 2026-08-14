@@ -135,121 +135,121 @@ const salmos = [
         referencia: "Salmo 150:6"
     },
     
-    1: {
+     {
         titulo: "Salmo 1",
         texto: "Dios bendice el camino de quien confía en Él y permanece firme.",
         referencia: "Salmo 1:1-3"
     },
 
-    4: {
+     {
         titulo: "Salmo 4",
         texto: "Puedes descansar en paz, porque Dios escucha cuando le llamas.",
         referencia: "Salmo 4:8"
     },
 
-    5: {
+     {
         titulo: "Salmo 5",
         texto: "Pon tu camino delante de Dios y confía en su dirección.",
         referencia: "Salmo 5:11"
     },
 
-    16: {
+     {
         titulo: "Salmo 16",
         texto: "En Dios encuentras seguridad, alegría y un camino que permanece.",
         referencia: "Salmo 16:8-11"
     },
 
-    18: {
+     {
         titulo: "Salmo 18",
         texto: "Cuando sientas que no puedes más, recuerda de dónde viene tu fuerza.",
         referencia: "Salmo 18:2"
     },
 
-    19: {
+     {
         titulo: "Salmo 19",
         texto: "La creación habla de la grandeza de Dios y su palabra ilumina el camino.",
         referencia: "Salmo 19:1,8"
     },
 
-    25: {
+     {
         titulo: "Salmo 25",
         texto: "Dios puede mostrarte el camino cuando no sabes hacia dónde ir.",
         referencia: "Salmo 25:4-5"
     },
 
-    31: {
+     {
         titulo: "Salmo 31",
         texto: "Puedes poner tu vida en las manos de Dios; Él es tu refugio.",
         referencia: "Salmo 31:3-5"
     },
 
-    32: {
+     {
         titulo: "Salmo 32",
         texto: "Hay libertad cuando dejas de cargar solo aquello que puedes entregar a Dios.",
         referencia: "Salmo 32:7"
     },
 
-    33: {
+     {
         titulo: "Salmo 33",
         texto: "Confía: los planes de Dios permanecen aun cuando tú todavía no los entiendas.",
         referencia: "Salmo 33:11"
     },
 
-    61: {
+     {
         titulo: "Salmo 61",
         texto: "Cuando tu corazón esté cansado, corre hacia Dios; Él puede ser tu refugio.",
         referencia: "Salmo 61:2-3"
     },
 
-    65: {
+     {
         titulo: "Salmo 65",
         texto: "Hay razones para agradecer incluso antes de ver todo lo que estás esperando.",
         referencia: "Salmo 65:5"
     },
 
-    66: {
+     {
         titulo: "Salmo 66",
         texto: "Dios escucha cuando clamas y no ignora las oraciones que salen de tu corazón.",
         referencia: "Salmo 66:19"
     },
 
-    71: {
+     {
         titulo: "Salmo 71",
         texto: "Puedes seguir confiando en Dios; Él ha sido tu esperanza desde siempre.",
         referencia: "Salmo 71:5"
     },
 
-    73: {
+     {
         titulo: "Salmo 73",
         texto: "Aunque no entiendas lo que sucede, permanecer cerca de Dios sigue siendo suficiente.",
         referencia: "Salmo 73:28"
     },
 
-    86: {
+     {
         titulo: "Salmo 86",
         texto: "Puedes acercarte a Dios con confianza: Él es bueno, compasivo y dispuesto a escuchar.",
         referencia: "Salmo 86:5"
     },
 
-    90: {
+     {
         titulo: "Salmo 90",
         texto: "Pídele a Dios sabiduría para vivir bien el tiempo que tienes hoy.",
         referencia: "Salmo 90:12"
     },
 
-    100: {
+     {
         titulo: "Salmo 100",
         texto: "Entra con gratitud: todavía hay motivos para celebrar la bondad de Dios.",
         referencia: "Salmo 100:4-5"
     },
 
-    118: {
+     {
         titulo: "Salmo 118",
         texto: "Aunque hoy sea difícil, recuerda que la misericordia de Dios permanece.",
         referencia: "Salmo 118:5-6"
     },
 
-    126: {
+     {
         titulo: "Salmo 126",
         texto: "Lo que hoy siembras con lágrimas puede convertirse mañana en una cosecha de alegría.",
         referencia: "Salmo 126:5"
