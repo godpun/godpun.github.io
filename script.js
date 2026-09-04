@@ -259,26 +259,57 @@ const salmos = [
 
 
 // ===========================
+// ELEMENTOS
+// ===========================
+
+const messageButton = document.getElementById("messageButton");
+
+const welcomeCard = document.getElementById("welcomeCard");
+
+const salmoCard = document.getElementById("salmoCard");
+
+const instagramCard =
+    document.querySelector(".instagram-card");
+
+const instagramButton =
+    document.getElementById("instagramButton");
+
+
+
+// ===========================
 // DESCUBRIR MENSAJE
 // ===========================
 
 messageButton.addEventListener("click", function () {
 
-    // Elegir un Salmo al azar
-    const indiceAleatorio = Math.floor(Math.random() * salmos.length);
 
-    const salmoActual = salmos[indiceAleatorio];
+    // ===========================
+    // ELEGIR SALMO ALEATORIO
+    // ===========================
+
+    const indiceAleatorio =
+        Math.floor(Math.random() * salmos.length);
+
+    const salmoActual =
+        salmos[indiceAleatorio];
 
 
-    // Mostrar el Salmo elegido
+
+    // ===========================
+    // MOSTRAR SALMO
+    // ===========================
+
     document.querySelector(".salmo-card h2").textContent =
         salmoActual.titulo;
+
 
     document.querySelector(".salmo-text").textContent =
         salmoActual.texto;
 
+
     document.querySelector(".salmo-reference").textContent =
         salmoActual.referencia;
+
 
 
     // ===========================
@@ -288,56 +319,107 @@ messageButton.addEventListener("click", function () {
     if (typeof gtag === "function") {
 
         gtag("event", "descubrir_mensaje", {
+
             salmo: salmoActual.titulo
+
         });
 
     }
 
 
+
     // ===========================
-    // TRANSICIÓN
+    // PRIMERA TARJETA DESAPARECE
     // ===========================
 
-    // Primera tarjeta desaparece
     welcomeCard.style.opacity = "0";
 
 
-   setTimeout(function () {
-
-    welcomeCard.style.display = "none";
-
-    // Segunda tarjeta aparece
-    salmoCard.style.display = "flex";
-
-    salmoCard.style.opacity = "0";
-
-
     setTimeout(function () {
 
-        salmoCard.style.opacity = "1";
 
-    }, 50);
+        welcomeCard.style.display = "none";
 
 
-    // ===========================
-    // TERCERA TARJETA - INSTAGRAM
-    // ===========================
 
-    setTimeout(function () {
+        // ===========================
+        // SEGUNDA TARJETA APARECE
+        // ===========================
 
-        instagramCard.style.display = "flex";
-        instagramCard.style.opacity = "0";
+        salmoCard.style.display = "flex";
+
+        salmoCard.style.opacity = "0";
+
+        salmoCard.style.transform =
+            "translateY(15px)";
 
 
         setTimeout(function () {
 
-            instagramCard.style.opacity = "1";
+            salmoCard.style.opacity = "1";
+
+            salmoCard.style.transform =
+                "translateY(0)";
 
         }, 50);
 
-    }, 700);
 
 
-}, 600);
+        // ===========================
+        // TERCERA TARJETA
+        // ===========================
+
+        setTimeout(function () {
+
+
+            instagramCard.style.display = "flex";
+
+            instagramCard.style.opacity = "0";
+
+            instagramCard.style.transform =
+                "translateY(18px)";
+
+
+            setTimeout(function () {
+
+
+                instagramCard.style.opacity = "1";
+
+                instagramCard.style.transform =
+                    "translateY(0)";
+
+
+            }, 50);
+
+
+        }, 900);
+
+
+    }, 600);
+
+});
+
+
+
+// ===========================
+// CLIC EN INSTAGRAM
+// ===========================
+
+instagramButton.addEventListener("click", function () {
+
+
+    if (typeof gtag === "function") {
+
+
+        gtag("event", "instagram_click", {
+
+            salmo: document.querySelector(
+                ".salmo-card h2"
+            ).textContent
+
+        });
+
+
+    }
 
 });
