@@ -1,27 +1,46 @@
-{
+/* ===========================
+   RESET
+=========================== */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
+
+/* ===========================
+   BODY
+=========================== */
+
 body {
+
     background: #F8F5F1;
 
     font-family: "Inter", Arial, sans-serif;
 
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
     min-height: 100vh;
 
     margin: 0;
+
+    padding: 30px 15px;
 }
 
 
+
+/* ===========================
+   PRIMERA TARJETA
+=========================== */
+
 .card {
+
     width: 345px;
 
     background: #FFFFFF;
@@ -31,20 +50,32 @@ body {
     padding: 50px 30px;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
 
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
 }
 
 
+
+/* ===========================
+   LOGO
+=========================== */
+
 .logo {
+
     width: 200px;
     height: 200px;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 
@@ -53,7 +84,9 @@ body {
     position: relative;
 }
 
+
 .logo img {
+
     width: 150%;
     height: 150%;
 
@@ -61,8 +94,19 @@ body {
 
     display: block;
 }
+
+
+
+/* ===========================
+   TITULO
+=========================== */
+
 h1 {
-    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
 
     font-size: 34px;
 
@@ -78,10 +122,19 @@ h1 {
 }
 
 
+
+/* ===========================
+   TEXTO GENERAL
+=========================== */
+
 p {
+
     color: #6E6E6E;
 
-    font-family: "Inter", Arial, sans-serif;
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 15px;
 
@@ -95,7 +148,13 @@ p {
 }
 
 
+
+/* ===========================
+   BOTÓN PRINCIPAL
+=========================== */
+
 button {
+
     width: 260px;
 
     height: 56px;
@@ -108,7 +167,10 @@ button {
 
     color: #FFFFFF;
 
-    font-family: "Inter", Arial, sans-serif;
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 16px;
 
@@ -121,13 +183,20 @@ button {
 
 
 button:hover {
+
     background: #9F8248;
 
     transform: translateY(-2px);
 }
 
 
+
+/* ===========================
+   SEGUNDA TARJETA
+=========================== */
+
 .salmo-card {
+
     display: none;
 
     width: 345px;
@@ -144,18 +213,25 @@ button:hover {
 
     text-align: center;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
 
     opacity: 0;
 
-    transition: opacity 0.6s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 
 .salmo-card h2 {
+
     margin-top: 35px;
 
-    font-family: "Cormorant Garamond", Georgia, serif;
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
 
     font-size: 32px;
 
@@ -165,7 +241,13 @@ button:hover {
 }
 
 
+
+/* ===========================
+   LINEA DORADA
+=========================== */
+
 .salmo-line {
+
     width: 45px;
 
     height: 1px;
@@ -176,12 +258,21 @@ button:hover {
 }
 
 
+
+/* ===========================
+   REFERENCIA
+=========================== */
+
 .salmo-reference {
+
     margin-top: 12px;
 
     margin-bottom: 0;
 
-    font-family: "Inter", Arial, sans-serif;
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 11px;
 
@@ -193,12 +284,21 @@ button:hover {
 }
 
 
+
+/* ===========================
+   TEXTO DEL SALMO
+=========================== */
+
 .salmo-text {
+
     margin-top: 32px;
 
     margin-bottom: 0;
 
-    font-family: "Cormorant Garamond", Georgia, serif;
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
 
     font-size: 21px;
 
@@ -212,12 +312,21 @@ button:hover {
 }
 
 
+
+/* ===========================
+   CIERRE DEL SALMO
+=========================== */
+
 .salmo-closing {
+
     margin-top: 30px;
 
     margin-bottom: 0;
 
-    font-family: "Inter", Arial, sans-serif;
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 11px;
 
@@ -228,24 +337,22 @@ button:hover {
     max-width: 230px;
 }
 
-@keyframes appearCard {
 
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* ===========================
+   FIRMA JULIANA
+=========================== */
 
-}
 .author-signature {
+
     margin-top: 28px;
+
     margin-bottom: 0;
 
-    font-family: "Cormorant Garamond", Georgia, serif;
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
 
     font-size: 11px;
 
@@ -258,14 +365,19 @@ button:hover {
     text-align: center;
 }
 
+
+
 /* ===========================
-   TERCERA TARJETA - INSTAGRAM
+   TERCERA TARJETA
+   INSTAGRAM
 =========================== */
 
 .instagram-card {
+
     display: none;
 
     width: 345px;
+
     background: #FFFFFF;
 
     border-radius: 24px;
@@ -273,10 +385,13 @@ button:hover {
     padding: 55px 30px 50px;
 
     flex-direction: column;
+
     align-items: center;
+
     text-align: center;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
 
     margin-top: 20px;
 
@@ -290,8 +405,17 @@ button:hover {
 }
 
 
+
+/* ===========================
+   ETIQUETA
+=========================== */
+
 .instagram-label {
-    font-family: "Inter", Arial, sans-serif;
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 9px;
 
@@ -303,8 +427,17 @@ button:hover {
 }
 
 
+
+/* ===========================
+   TITULO INSTAGRAM
+=========================== */
+
 .instagram-card h2 {
-    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
 
     font-size: 30px;
 
@@ -320,8 +453,17 @@ button:hover {
 }
 
 
+
+/* ===========================
+   TEXTO INSTAGRAM
+=========================== */
+
 .instagram-card p {
-    font-family: "Inter", Arial, sans-serif;
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 14px;
 
@@ -335,8 +477,17 @@ button:hover {
 }
 
 
+
+/* ===========================
+   USUARIO
+=========================== */
+
 .instagram-user {
-    font-family: "Inter", Arial, sans-serif;
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 13px;
 
@@ -350,13 +501,20 @@ button:hover {
 }
 
 
+
+/* ===========================
+   BOTÓN INSTAGRAM
+=========================== */
+
 .instagram-button {
+
     display: flex;
 
     justify-content: center;
     align-items: center;
 
     width: 260px;
+
     height: 56px;
 
     border-radius: 28px;
@@ -365,7 +523,10 @@ button:hover {
 
     color: #FFFFFF;
 
-    font-family: "Inter", Arial, sans-serif;
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
 
     font-size: 13px;
 
@@ -380,6 +541,104 @@ button:hover {
         transform 0.3s ease;
 }
 
+
+.instagram-button:hover {
+
+    background: #9F8248;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.site-footer {
+
+    width: 345px;
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    padding-bottom: 10px;
+
+    color: #9A9389;
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
+}
+
+
+.site-footer div {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 6px;
+}
+
+
+.site-footer span {
+
+    font-size: 9px;
+
+    letter-spacing: 0.5px;
+}
+
+
+
+/* ===========================
+   ANIMACIÓN
+=========================== */
+
+@keyframes appearCard {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+
+/* ===========================
+   CELULARES PEQUEÑOS
+=========================== */
+
+@media (max-width: 380px) {
+
+    body {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .card,
+    .salmo-card,
+    .instagram-card,
+    .site-footer {
+
+        width: 100%;
+        max-width: 345px;
+    }
+
+}
 
 .instagram-button:hover {
     background: #9F8248;
