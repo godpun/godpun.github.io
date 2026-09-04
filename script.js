@@ -2,10 +2,12 @@ const messageButton = document.getElementById("messageButton");
 const welcomeCard = document.getElementById("welcomeCard");
 const salmoCard = document.getElementById("salmoCard");
 const instagramCard = document.querySelector(".instagram-card");
+const instagramButton = document.getElementById("instagramButton");
 
 // ===========================
 // SALMOS
 // ===========================
+
 
 const salmos = [
 
@@ -256,24 +258,6 @@ const salmos = [
     }
 
 ];
-
-
-// ===========================
-// ELEMENTOS
-// ===========================
-
-const messageButton = document.getElementById("messageButton");
-
-const welcomeCard = document.getElementById("welcomeCard");
-
-const salmoCard = document.getElementById("salmoCard");
-
-const instagramCard =
-    document.querySelector(".instagram-card");
-
-const instagramButton =
-    document.getElementById("instagramButton");
-
 
 
 // ===========================
