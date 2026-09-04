@@ -1,7 +1,7 @@
 const messageButton = document.getElementById("messageButton");
 const welcomeCard = document.getElementById("welcomeCard");
 const salmoCard = document.getElementById("salmoCard");
-
+const instagramCard = document.querySelector(".instagram-card");
 
 // ===========================
 // SALMOS
@@ -302,22 +302,42 @@ messageButton.addEventListener("click", function () {
     welcomeCard.style.opacity = "0";
 
 
+   setTimeout(function () {
+
+    welcomeCard.style.display = "none";
+
+    // Segunda tarjeta aparece
+    salmoCard.style.display = "flex";
+
+    salmoCard.style.opacity = "0";
+
+
     setTimeout(function () {
 
-        welcomeCard.style.display = "none";
+        salmoCard.style.opacity = "1";
 
-        // Segunda tarjeta aparece
-        salmoCard.style.display = "flex";
+    }, 50);
 
-        salmoCard.style.opacity = "0";
+
+    // ===========================
+    // TERCERA TARJETA - INSTAGRAM
+    // ===========================
+
+    setTimeout(function () {
+
+        instagramCard.style.display = "flex";
+        instagramCard.style.opacity = "0";
 
 
         setTimeout(function () {
 
-            salmoCard.style.opacity = "1";
+            instagramCard.style.opacity = "1";
 
         }, 50);
 
-    }, 600);
+    }, 700);
+
+
+}, 600);
 
 });
